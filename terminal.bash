@@ -7,8 +7,8 @@ sudo apt install -y terminator
 gsettings set org.gnome.desktop.default-applications.terminal exec "terminator"
 
 # Config
-mkdir -p $HOME/.config
-cat << 'EOF' >$HOME/.config/terminator/config
+mkdir -p ~/.config
+cat << 'EOF' >~/.config/terminator/config
 [global_config]
   window_state = fullscreen
   borderless = True
