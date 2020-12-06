@@ -6,3 +6,19 @@ echo 'deb https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium mai
 sudo apt update && sudo apt install codium
 
 # Configure
+## Bash IDE
+codium --install-extension mads-hartmann.bash-ide-vscode
+## Bash Debbuger
+codium --install-extension rogalmic.bash-debug
+## Yaml + k8s syntax
+codium --install-extension redhat.vscode-yaml
+## XML
+codium --install-extension redhat.vscode-xml
+## Docker
+codium --install-extension ms-azuretools.vscode-docker
+## GitLens
+codium --install-extension eamodio.gitlens
+## GitGraph
+codium --install-extension mhutchie.git-graph
+## Icons
+codium --install-extension vscode-icons-team.vscode-icons
