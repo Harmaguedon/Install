@@ -24,6 +24,10 @@ codium --install-extension christian-kohler.path-intellisense
 wget https://github.com/tomoki1207/vscode-pdfviewer/releases/download/v1.0.0/pdf-1.0.0.vsix -O /tmp/pdf-1.0.0.vsix
 codium --install-extension /tmp/pdf-1.0.0.vsix
 rm /tmp/pdf-1.0.0.vsix
+## Spell Check
+codium --install-extension streetsidesoftware.code-spell-checker
+codium --install-extension streetsidesoftware.code-spell-checker-french
+cat <<< $(jq '. + {"cSpell.language": "fr,en"}' ~/.config/VSCodium/User/settings.json) > ~/.config/VSCodium/User/settings.json
 ## XML
 codium --install-extension redhat.vscode-xml
 ## Yaml + k8s syntax
