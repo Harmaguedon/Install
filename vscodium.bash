@@ -18,6 +18,8 @@ codium --install-extension eamodio.gitlens
 codium --install-extension mhutchie.git-graph
 ## Icons
 codium --install-extension vscode-icons-team.vscode-icons
+## Kubernetes
+codium --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
 ## Path Autocompletion
 codium --install-extension christian-kohler.path-intellisense
 ## PDF
