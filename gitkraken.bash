@@ -1,5 +1,6 @@
 #!/bin/bash
 
-wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo dpkg -i gitkraken-amd64.deb
-rm gitkraken-amd64.deb
+sudo apt update && sudo apt install -y gconf2 gconf-service python2
+wget -O /tmp/gitkraken.deb https://release.axocdn.com/linux/GitKraken-v6.5.1.deb
+sudo dpkg -i /tmp/gitkraken.deb 
+rm /tmp/gitkraken.deb 
