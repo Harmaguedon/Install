@@ -28,6 +28,8 @@ rm /tmp/pdf-1.0.0.vsix
 codium --install-extension streetsidesoftware.code-spell-checker
 codium --install-extension streetsidesoftware.code-spell-checker-french
 cat <<< $(jq '. + {"cSpell.language": "fr,en"}' ~/.config/VSCodium/User/settings.json) > ~/.config/VSCodium/User/settings.json
+## Vagrant
+codium --install-extension bbenoist.vagrant
 ## XML
 codium --install-extension redhat.vscode-xml
 ## Yaml + k8s syntax
