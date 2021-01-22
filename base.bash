@@ -9,8 +9,10 @@ sudo apt update && sudo apt install -y \
     lftp \
     libavcodec-dev \
     nmap \
+    s3cmd \
     transmission \
     unzip \
+    vlc \
     wget
 
 # Install Calibre
