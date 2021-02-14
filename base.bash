@@ -2,6 +2,7 @@
 
 # Install packets
 sudo apt update && sudo apt install -y \
+    apt-transport-https \
     curl \
     git \
     htop \
@@ -9,6 +10,7 @@ sudo apt update && sudo apt install -y \
     lftp \
     libavcodec-dev \
     nmap \
+    python3-pip \
     s3cmd \
     transmission \
     unzip \
