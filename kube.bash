@@ -5,6 +5,13 @@ kube_version=$(curl -s https://storage.googleapis.com/kubernetes-release/release
 sudo wget -O /usr/local/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/${kube_version}/bin/linux/amd64/kubectl
 sudo chmod +x /usr/local/bin/kubectl 
 sudo ln -s /usr/local/bin/kubectl /usr/local/bin/k
+cat <<-'EOF' >>~/.bashrc 
+
+source /usr/share/bash-completion/bash_completion
+source <(kubectl completion bash)
+alias k=kubectl
+complete -F __start_kubectl k
+EOF
 
 ## Helm
 helm_version=$(curl -s https://api.github.com/repos/helm/helm/releases/latest | jq -r '.tag_name')
