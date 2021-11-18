@@ -4,22 +4,22 @@
 sudo apt update && sudo apt install -y \
     apt-transport-https \
     curl \
+    deluge \
     git \
+    gparted \
+    gthumb \
     htop \
     jq \
     lftp \
     libavcodec-dev \
+    libreoffice \
     nmap \
     python3-pip \
     s3cmd \
-    transmission \
     unzip \
+    vim \
     vlc \
     wget
-
-# Install Calibre
-sudo apt install xdg-utils libxcb-xinerama0
-curl -s https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
 # Setup wallpaper
 gsettings set org.gnome.desktop.background picture-uri $( cd "${0%/*}" && pwd )/wallpaper.png

@@ -13,6 +13,7 @@ sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo apt -y update 
 sudo apt -y install dialog lutris 
 
+mkdir -p ~/bin
 cat << 'EOF' > ~/bin/lutris_wrapper
 #!/bin/bash
 
