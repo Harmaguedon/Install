@@ -6,6 +6,7 @@ sudo apt update && sudo apt install -y \
     curl \
     deluge \
     git \
+    gimp \
     gparted \
     gthumb \
     htop \
@@ -22,4 +23,4 @@ sudo apt update && sudo apt install -y \
     wget
 
 # Setup wallpaper
-gsettings set org.gnome.desktop.background picture-uri $( cd "${0%/*}" && pwd )/wallpaper.png
+gsettings set org.gnome.desktop.background picture-uri $( cd "${0%/*}" && pwd )/files/wallpaper.png

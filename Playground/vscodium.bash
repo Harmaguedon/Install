@@ -23,7 +23,7 @@ codium --install-extension vscode-icons-team.vscode-icons
 ## Jupyter
 codium --install-extension ms-toolsai.jupyter
 ## Kubernetes
-codium --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
+codium --install-extension ms-kubernetes-tools.vscode-kubernetes-tool
 ## LLDB
 codium --install-extension vadimcn.vscode-lldb
 ## Makefile
@@ -44,5 +44,7 @@ cat <<< $(jq '. + {"cSpell.language": "fr,en"}' ~/.config/VSCodium/User/settings
 codium --install-extension bbenoist.vagrant
 ## XML
 codium --install-extension redhat.vscode-xml
+## XLS Viewer
+codium --install-extension randomfractalsinc.vscode-data-preview
 ## Yaml + k8s syntax
 codium --install-extension redhat.vscode-yaml
