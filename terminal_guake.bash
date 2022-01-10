@@ -7,7 +7,7 @@ sudo apt install -y guake
 gsettings set org.gnome.desktop.default-applications.terminal exec "guake"
 
 # Config
-cat << 'EOF' >~/tmp/guakeConf
+cat << 'EOF' >/tmp/guakeConf
 [general]
 abbreviate-tab-names=false
 compat-delete='delete-sequence'
